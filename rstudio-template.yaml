@@ -369,7 +369,7 @@ objects:
     source:
       type: Git
       git:
-        uri: https://github.com/mmtod/ropenbugs.git
+        uri: https://github.com/mmtod/test.git
         ref: ${SOURCE_REPOSITORY_REF}
       contextDir: server
     strategy:

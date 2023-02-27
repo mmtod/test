@@ -1,4 +1,4 @@
-FROM rocker/tidyverse:4.1.3
+FROM rocker/tidyverse:4.2.2
 
 COPY ./start.sh .
 RUN chmod +x start.sh

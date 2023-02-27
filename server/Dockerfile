@@ -39,6 +39,8 @@ RUN dpkg -i /tmp/shiny.deb && \
     mkdir -p /var/log/rstudio-server &&\
     chown rstudio.rstudio /var/log/rstudio-server &&\
     chmod go+w /var/log/rstudio-server
+RUN wget -nd -P /tmp https://pj.freefaculty.org/Ubuntu/15.04/amd64/openbugs/openbugs_3.2.3-1_amd64.deb
+RUN dpkg -i /tmp/openbugs_3.2.3-1_amd64.deb && rm /tmp/openbugs_3.2.3-1_amd64.deb
 
 COPY shiny-server.conf /etc/shiny-server/
 ###
